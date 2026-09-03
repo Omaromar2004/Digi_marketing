@@ -600,7 +600,7 @@ footer p{margin:0 0 .5rem; font-size:.82rem; color:var(--mute); line-height:1.6}
       <p class="btn-note">📅 Saturday, 12th September · 12:00 PM · Registration closes soon</p>
     </div>
 
-    <div class="cd rv" id="cd" aria-label="Time left to register">
+    <div class="cd rv" id="cd" data-date="2026-09-12" aria-label="Time left to register">
       <div><b id="cd-d">00</b><span>DAYS</span></div>
       <div><b id="cd-h">00</b><span>HOURS</span></div>
       <div><b id="cd-m">00</b><span>MINS</span></div>
@@ -679,6 +679,13 @@ window.FIQR_PIXEL_ID = ""; /* e.g. "1234567890123456" */
 </script>
 
 <script>
+/* =========================================================================
+   EVENT DATE CONFIGURATION
+   Change the date here or in <div id="cd" data-date="YYYY-MM-DD">
+   The timer will automatically count down to 12:00 PM IST on that date.
+   ========================================================================= */
+window.EVENT_DATE = "2026-09-12"; /* Format: "YYYY-MM-DD" (e.g. 2026-09-12 for 12th Sept) */
+
 (function(){
   /* fire InitiateCheckout when someone taps a book-seat button */
   document.querySelectorAll('[data-cta]').forEach(function(a){
@@ -721,26 +728,30 @@ window.FIQR_PIXEL_ID = ""; /* e.g. "1234567890123456" */
     nums.forEach(function(n){io2.observe(n)});
   } else { nums.forEach(run); }
 
-  /* countdown to Saturday 12th September 12:00 IST */
+  /* countdown to 12:00 PM IST of the configured date */
+  var cdWrap = document.getElementById('cd');
   function getEventCountdown(){
-    var now = new Date();
-    var ist = new Date(now.getTime() + (now.getTimezoneOffset()*60000) + (5.5*3600000));
-    var year = ist.getFullYear();
-    var target = new Date(year, 8, 12, 12, 0, 0);
-    if(ist.getTime() > target.getTime()){
-      target = new Date(year + 1, 8, 12, 12, 0, 0);
+    var rawDate = (cdWrap && cdWrap.getAttribute('data-date')) || window.EVENT_DATE || "2026-09-12";
+    var target;
+    if(/^\d{4}-\d{2}-\d{2}$/.test(rawDate)){
+      /* ISO date YYYY-MM-DD converted to 12:00 PM Indian Standard Time (+05:30) */
+      target = new Date(rawDate + "T12:00:00+05:30");
+    } else {
+      target = new Date(rawDate);
     }
-    return target.getTime() - ist.getTime();
+    var now = new Date();
+    var diff = target.getTime() - now.getTime();
+    return diff > 0 ? diff : 0;
   }
   var el = {d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
   function pad(n){return n<10?'0'+n:''+n}
   function tick(){
-    var ms = getEventCountdown(); if(ms<0) ms=0;
+    var ms = getEventCountdown();
     var s = Math.floor(ms/1000);
-    el.d.textContent = pad(Math.floor(s/86400));
-    el.h.textContent = pad(Math.floor(s%86400/3600));
-    el.m.textContent = pad(Math.floor(s%3600/60));
-    el.s.textContent = pad(s%60);
+    if(el.d) el.d.textContent = pad(Math.floor(s/86400));
+    if(el.h) el.h.textContent = pad(Math.floor((s%86400)/3600));
+    if(el.m) el.m.textContent = pad(Math.floor((s%3600)/60));
+    if(el.s) el.s.textContent = pad(s%60);
   }
   tick(); setInterval(tick,1000);
 
