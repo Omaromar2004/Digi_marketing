@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration Confirmed | FiqrTaalim Live Webinar</title>
+<meta name="description" content="Your seat is reserved for FiqrTaalim's 3-hour live digital service webinar. Join the private WhatsApp community for Zoom link and updates.">
+<meta name="theme-color" content="#14110E">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '701217605788586');
+fbq('track', 'PageView');
+fbq('track', 'Purchase', { value: 499, currency: 'INR' });
+fbq('track', 'CompleteRegistration', { value: 499, currency: 'INR' });
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=701217605788586&ev=Purchase&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Marcellus&amp;display=swap">
+
+<style>
+@property --a { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #14110E; color: #F3EBDD; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
+* , *::before , *::after { box-sizing: border-box; }
+
+.page { width: 100%; min-height: 100vh; overflow-x: clip; background: #14110E; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; }
+.wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.ico { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* animations */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes popIn { 0% { opacity: 0; transform: scale(.88); } 70% { transform: scale(1.03); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45), 0 16px 36px -10px rgba(37, 211, 102, 0.4); } 50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 20px 48px -10px rgba(37, 211, 102, 0.6); } }
+@keyframes sweep { to { transform: translateX(130%); } }
+
+/* nav */
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 1080px; margin: 0 auto; padding: 24px 24px 10px; width: 100%; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-family: 'Marcellus', Georgia, serif; font-size: 24px; color: #F3EBDD; text-decoration: none; }
+.logo-mark { width: 22px; height: 22px; color: #D9BD86; display: inline-flex; animation: spin 24s linear infinite; }
+.nav-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #C2B7A3; padding: 6px 14px; border-radius: 999px; background: rgba(243,235,221,.06); border: 1px solid rgba(243,235,221,.12); }
+
+/* hero confirmation */
+.hero { position: relative; padding: 36px 0 70px; text-align: center; }
+.hero-glow { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); width: 700px; height: 400px; background: radial-gradient(50% 50% at 50% 40%, rgba(217,189,134,.15) 0%, rgba(37,211,102,.07) 40%, transparent 75%); pointer-events: none; z-index: 0; }
+
+.status-pill { display: inline-flex; align-items: center; gap: 10px; padding: 9px 20px 9px 16px; border-radius: 999px; border: 1px solid rgba(37,211,102,.35); background: rgba(37,211,102,.1); font-size: 14px; font-weight: 700; color: #4EED88; animation: fadeUp .8s ease both; }
+.status-dot { width: 9px; height: 9px; border-radius: 50%; background: #25D366; box-shadow: 0 0 0 4px rgba(37,211,102,.25); }
+
+.h1 { margin: 24px 0 12px; font-family: 'Marcellus', Georgia, serif; font-weight: 400; font-size: clamp(34px, 5.2vw, 56px); line-height: 1.15; color: #F3EBDD; animation: fadeUp .9s cubic-bezier(.2,.75,.15,1) .1s both; }
+.h1 span.gold { color: #D9BD86; }
+.sub { margin: 0 auto; max-width: 660px; font-size: clamp(17px, 1.35vw, 19px); line-height: 1.6; color: #CFC5B4; animation: fadeUp .9s cubic-bezier(.2,.75,.15,1) .2s both; }
+
+/* THE VIP WHATSAPP CALLOUT BOX */
+.wa-hero-box {
+  position: relative;
+  z-index: 3;
+  margin: 44px auto 0;
+  max-width: 820px;
+  background: linear-gradient(165deg, rgba(32, 28, 23, 0.95), rgba(18, 26, 20, 0.96));
+  border: 1.5px solid rgba(37, 211, 102, 0.45);
+  border-radius: 28px;
+  padding: 44px 36px;
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8), 0 0 50px -10px rgba(37, 211, 102, 0.15);
+  animation: popIn 1s cubic-bezier(.2,.8,.2,1) .3s both;
+  text-align: center;
+}
+.wa-hero-box::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(37,211,102,.5), transparent 45%, rgba(217,189,134,.4));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(220, 53, 69, 0.16);
+  border: 1px solid rgba(220, 53, 69, 0.35);
+  color: #FF858F;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.urgency-dot { width: 7px; height: 7px; border-radius: 50%; background: #FF4D5B; box-shadow: 0 0 8px #FF4D5B; }
+
+.wa-title {
+  margin: 0 0 14px;
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.22;
+  color: #FFFFFF;
+}
+.wa-desc {
+  margin: 0 auto 30px;
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #D6D0C5;
+}
+.wa-desc strong {
+  color: #4EED88;
+  font-weight: 600;
+}
+
+/* Big WhatsApp Button */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 66px;
+  padding: 0 44px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
+  color: #FFFFFF !important;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: pulseGlow 2.8s infinite;
+  transition: transform .22s ease, filter .22s ease;
+}
+.btn-wa:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.08);
+}
+.btn-wa::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,.45) 50%, transparent 75%);
+  transform: translateX(-130%);
+}
+.btn-wa:hover::after {
+  animation: sweep .9s ease-out both;
+}
+.wa-icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  flex: none;
+}
+
+.wa-notice {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #9E9689;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.wa-notice svg { width: 15px; height: 15px; color: #25D366; }
+
+/* Event Details & Next Steps Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+@media (max-width: 840px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .wa-hero-box { padding: 32px 20px; }
+  .btn-wa { width: 100%; padding: 0 24px; font-size: 18px; min-height: 60px; }
+}
+
+.card {
+  padding: 30px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, rgba(38,32,27,.8), rgba(22,18,16,.9));
+  border: 1px solid rgba(243,235,221,.12);
+  box-shadow: 0 24px 50px -25px rgba(0,0,0,.7);
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(243,235,221,.08);
+}
+.card-head-ico {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(217,189,134,.12);
+  color: #D9BD86;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.card-head h3 {
+  margin: 0;
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 21px;
+  color: #F3EBDD;
+  font-weight: 400;
+}
+
+/* Steps list */
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.step-item:last-child { margin-bottom: 0; }
+.step-num {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(217,189,134,.15);
+  border: 1px solid rgba(217,189,134,.35);
+  color: #F2DCAE;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-content h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #F3EBDD;
+}
+.step-content p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #BDB3A2;
+}
+
+/* Detail lines */
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(243,235,221,.06);
+  font-size: 15px;
+}
+.detail-row:last-child { border-bottom: none; }
+.detail-label { color: #A89F90; }
+.detail-val { color: #F3EBDD; font-weight: 600; text-align: right; }
+.badge-paid {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(37,211,102,.12);
+  color: #4EED88;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Calendar Button */
+.btn-cal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 20px;
+  border-radius: 999px;
+  background: rgba(243,235,221,.08);
+  border: 1px solid rgba(243,235,221,.16);
+  color: #F3EBDD;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+.btn-cal:hover {
+  background: rgba(243,235,221,.14);
+  color: #FFFFFF;
+}
+.btn-cal svg { width: 17px; height: 17px; color: #D9BD86; }
+
+/* Support footer */
+.help-box {
+  margin: 48px auto 0;
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(243,235,221,.04);
+  border: 1px dashed rgba(243,235,221,.14);
+  text-align: center;
+  max-width: 680px;
+}
+.help-box p { margin: 0; font-size: 15px; color: #BDB3A2; }
+.help-box a { color: #25D366; text-decoration: underline; font-weight: 600; }
+
+.foot {
+  margin-top: auto;
+  padding: 40px 0 30px;
+  text-align: center;
+  border-top: 1px solid rgba(243,235,221,.08);
+  font-size: 14px;
+  color: #8C8477;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- Nav -->
+  <header class="nav">
+    <a class="logo" href="/">
+      <span class="logo-mark">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12"></rect><rect x="6" y="6" width="12" height="12" transform="rotate(45 12 12)"></rect></svg>
+      </span>
+      <span>FiqrTaalim</span>
+    </a>
+    <span class="nav-badge">
+      <svg class="ico" style="width:14px;height:14px;color:#25D366" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+      Confirmed Seat
+    </span>
+  </header>
+
+  <!-- Hero Content -->
+  <main class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap">
+
+      <!-- Status Pill -->
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Payment Received • Registration Complete</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="h1">
+        You're In, <span class="gold">Alhamdulillah!</span>
+      </h1>
+      <p class="sub">
+        Your seat for the 3-hour live intensive <strong>"Build Your Own Digital Service, the Halal Way"</strong> has been successfully booked.
+      </p>
+
+      <!-- VIP WHATSAPP COMMUNITY CALLOUT (Primary Action) -->
+      <div class="wa-hero-box">
+        <div class="urgency-badge">
+          <span class="urgency-dot"></span>
+          <span>Step 1 of 1 • Immediate Action Required</span>
+        </div>
+
+        <h2 class="wa-title">Join The Private Attendees WhatsApp Group</h2>
+
+        <p class="wa-desc">
+          The <strong>Zoom meeting link</strong>, preparatory workbook, session reminders, and Zuhr Salah break timings will <strong>strictly be shared inside this private WhatsApp community</strong>. Please tap the button below to join right now.
+        </p>
+
+        <!-- Big Animated WhatsApp Button -->
+        <a class="btn-wa" id="whatsapp-join-btn" href="https://chat.whatsapp.com/YOUR_GROUP_INVITE_LINK" target="_blank" rel="noopener noreferrer">
+          <!-- WhatsApp Icon -->
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.6.2-1.7-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.4c1.5.9 3.3 1.4 5.2 1.4 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.6-1.3l-.3-.2-2.9.8.8-2.8-.2-.3c-1-1.5-1.5-3.2-1.5-5 0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.7 8.8-8.2 8.8z"/>
+          </svg>
+          <span>Join WhatsApp Community Now</span>
+        </a>
+
+        <div class="wa-notice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Admin-only posts • No spam • 100% spam-free & private</span>
+        </div>
+      </div>
+
+      <!-- Information & Next Steps Grid -->
+      <div class="info-grid">
+
+        <!-- What to do next -->
+        <div class="card">
+          <div class="card-head">
+            <span class="card-head-ico">
+              <svg class="ico" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+            </span>
+            <h3>Next Steps Before Saturday</h3>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div class="step-content">
+              <h4>Join the WhatsApp Community</h4>
+              <p>This is where we deliver the Zoom link on Friday evening and send the 15-minute start reminder.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div class="step-content">
+              <h4>Block Your Calendar (12 to 3 PM IST)</h4>
+              <p>Keep a distraction-free space ready. We will pause for 20 minutes for Zuhr Salah.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div class="step-content">
+              <h4>Keep a Notebook & Zoom Ready</h4>
+              <p>Install Zoom on your laptop or phone beforehand so you can join promptly on Saturday.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session Details Summary -->
+        <div class="card">
+          <div class="card-head">
+            <span class="card-head-ico">
+              <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </span>
+            <h3>Webinar Summary</h3>
+          </div>
+
+          <div class="detail-row">
+            <span class="detail-label">Date</span>
+            <span class="detail-val" id="webinar-date-label">Saturday, 3 Oct 2026</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Time</span>
+            <span class="detail-val">12:00 PM – 3:00 PM IST</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Platform</span>
+            <span class="detail-val">Zoom Live</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Language</span>
+            <span class="detail-val">Hindi & English</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Salah Break</span>
+            <span class="detail-val">20 mins for Zuhr</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="badge-paid">✓ ₹499 Paid</span>
+          </div>
+
+          <a class="btn-cal" id="add-to-calendar" href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Add to Google Calendar</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Support Box -->
+      <div class="help-box">
+        <p>
+          Didn't get an email or have an issue joining the WhatsApp group? Message our WhatsApp support at <a id="support-wa-link" href="https://wa.me/919945891650?text=Assalamu%20Alaikum,%20I%20have%20registered%20for%20the%20FiqrTaalim%20webinar%20and%20need%20assistance.">+91 99458 91650</a> (Messages only).
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="foot">
+    <div class="wrap">
+      <p style="margin:0 0 6px;">FiqrTaalim • A FIQRGROUPS company</p>
+      <p style="margin:0;">WhatsApp +91 99458 91650 (messages only) • © 2026 FiqrTaalim</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+/* ===== CONFIGURATION: EDIT YOUR WHATSAPP LINK HERE ===== */
+var CONFIG = {
+  // Put your WhatsApp Community / Group invite link below:
+  whatsappCommunityUrl: 'https://chat.whatsapp.com/YOUR_GROUP_INVITE_LINK',
+  supportPhone: '919945891650',
+  webinarDateStr: '2026-10-03', // YYYY-MM-DD
+  title: 'Build Your Own Digital Service (FiqrTaalim Live Webinar)',
+  details: 'Zoom link is shared in the attendees WhatsApp group. Includes Zuhr Salah break.'
+};
+/* ======================================================== */
+
+(function() {
+  // Set WhatsApp Community Button Link
+  var waBtn = document.getElementById('whatsapp-join-btn');
+  if (waBtn) {
+    if (CONFIG.whatsappCommunityUrl && CONFIG.whatsappCommunityUrl.indexOf('YOUR_GROUP_INVITE_LINK') === -1) {
+      waBtn.href = CONFIG.whatsappCommunityUrl;
+    } else {
+      // Fallback: direct WhatsApp message to admin to add them
+      waBtn.href = 'https://wa.me/' + CONFIG.supportPhone + '?text=' + encodeURIComponent('Assalamu Alaikum, I have registered for the FiqrTaalim webinar! Please add me to the private WhatsApp community.');
+    }
+
+    waBtn.addEventListener('click', function() {
+      if (window.fbq) {
+        fbq('trackCustom', 'JoinedWhatsAppCommunity');
+      }
+    });
+  }
+
+  // Google Calendar link generation
+  var calBtn = document.getElementById('add-to-calendar');
+  if (calBtn) {
+    var startIso = '20261003T063000Z'; // 12:00 PM IST is 06:30 UTC
+    var endIso = '20261003T093000Z';   // 3:00 PM IST is 09:30 UTC
+    var calUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+      + '&text=' + encodeURIComponent(CONFIG.title)
+      + '&dates=' + startIso + '/' + endIso
+      + '&details=' + encodeURIComponent(CONFIG.details)
+      + '&location=' + encodeURIComponent('Zoom (Link in WhatsApp Group)');
+    calBtn.href = calUrl;
+  }
+})();
+</script>
+</body>
+</html>
