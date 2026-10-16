@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Build Your Own Digital Service, the Halal Way | FiqrTaalim Live Webinar</title>
-<meta name="description" content="A 3-hour live webinar for Muslims: pick a digital service, find clients online and get paid, the halal way. Friday, 12 to 3 PM IST on Zoom.">
+<meta name="description" content="A 3-hour live webinar for Muslims: pick a digital service, find clients online and get paid, the halal way. Saturday, 12 to 3 PM IST on Zoom.">
 <meta name="theme-color" content="#14110E">
 <!-- Meta Pixel Code -->
 <script>
@@ -149,6 +149,37 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 .mq-alt { font-family: 'Marcellus', Georgia, serif; font-weight: 400; font-size: 19px; color: #D9BD86; }
 .mq-item { display: inline-flex; align-items: center; gap: 14px; padding-right: 46px; font-size: 17px; font-weight: 600; color: #DCD2C1; white-space: nowrap; }
 .mq-star { width: 14px; height: 14px; color: #D9BD86; display: inline-flex; }
+
+/* verified proof section */
+.sec-proof { position: relative; padding: 80px 0 96px; background: radial-gradient(75% 55% at 50% 12%, rgba(46,36,56,.45) 0%, rgba(20,17,14,0) 75%), linear-gradient(180deg, #171310 0%, #14110E 100%); border-bottom: 1px solid rgba(243,235,221,.08); }
+.proof-pill { display: inline-flex; align-items: center; gap: 8px; padding: 7px 18px; border-radius: 999px; background: rgba(46, 204, 113, .12); border: 1px solid rgba(46, 204, 113, .35); color: #2ecc71; font-size: 13.5px; font-weight: 700; letter-spacing: .02em; }
+.proof-lead { margin: 16px auto 0; max-width: 680px; font-size: 18px; line-height: 1.6; color: #CFC5B4; text-align: center; }
+
+.proof-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; max-width: 840px; margin: 36px auto 0; }
+.p-stat { background: linear-gradient(160deg, rgba(38,32,27,.82), rgba(20,17,14,.92)); border: 1px solid rgba(217,189,134,.2); border-radius: 18px; padding: 20px 22px; text-align: center; box-shadow: 0 16px 36px -12px rgba(0,0,0,.7); transition: transform .3s ease, border-color .3s ease; }
+.p-stat:hover { transform: translateY(-3px); border-color: rgba(217,189,134,.45); }
+.p-stat-n { display: block; font-family: 'Marcellus', Georgia, serif; font-size: 34px; line-height: 1.1; color: #E3BC72; }
+.p-stat-l { display: block; margin-top: 6px; font-size: 13.5px; font-weight: 600; color: #BDB3A2; }
+
+.proof-frame-wrap { max-width: 1040px; margin: 40px auto 0; position: relative; }
+.proof-frame { border-radius: 22px; overflow: hidden; background: linear-gradient(180deg, #1C1814 0%, #110E0C 100%); border: 1.5px solid rgba(217,189,134,.32); box-shadow: 0 32px 80px -20px rgba(0,0,0,.95), 0 0 45px -15px rgba(217,189,134,.2); }
+.proof-frame-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 16px 24px; background: rgba(243,235,221,.04); border-bottom: 1px solid rgba(217,189,134,.16); }
+.pf-brand { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: #E6DCCB; }
+.pf-dot { width: 8px; height: 8px; border-radius: 50%; background: #2ECC71; box-shadow: 0 0 10px #2ECC71; }
+.pf-gateway { color: #58A6FF; font-weight: 800; letter-spacing: -.01em; font-size: 15px; }
+.pf-sep { color: rgba(243,235,221,.25); }
+.pf-tag { color: #A89F90; }
+.pf-status { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; background: rgba(46, 204, 113, .12); border: 1px solid rgba(46, 204, 113, .3); font-size: 12px; font-weight: 700; color: #2ECC71; }
+
+.proof-img-box { width: 100%; overflow-x: auto; background: #FFFFFF; -webkit-overflow-scrolling: touch; }
+.proof-img-box img { display: block; width: 100%; min-width: 720px; height: auto; object-fit: contain; }
+
+.proof-frame-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 22px 28px; background: rgba(243,235,221,.03); border-top: 1px solid rgba(217,189,134,.16); }
+.pf-note { display: flex; align-items: flex-start; gap: 14px; max-width: 660px; }
+.pf-shield { flex: none; width: 38px; height: 38px; border-radius: 50%; background: rgba(217,189,134,.12); border: 1px solid rgba(217,189,134,.32); color: #E3BC72; display: flex; align-items: center; justify-content: center; padding: 9px; }
+.pf-shield-t { margin: 0 0 4px; font-size: 15px; font-weight: 700; color: #F3EBDD; }
+.pf-shield-d { margin: 0; font-size: 13.5px; line-height: 1.55; color: #A89F90; }
+.proof-mobile-hint { display: none; text-align: center; margin: 12px 0 0; font-size: 12px; color: #8A8173; }
 
 /* shared section type */
 .sec { position: relative; padding: 120px 0; }
@@ -433,6 +464,13 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
   .m-role { font-size: 14px; }
   .foot-in { flex-direction: column; text-align: center; }
   .mbar { display: flex; }
+  .sec-proof { padding: 60px 0 70px; }
+  .proof-stats { grid-template-columns: 1fr; gap: 10px; margin-top: 24px; }
+  .p-stat { padding: 14px 16px; }
+  .p-stat-n { font-size: 28px; }
+  .proof-frame-header { padding: 12px 16px; }
+  .proof-frame-footer { flex-direction: column; align-items: stretch; padding: 18px 16px; }
+  .proof-mobile-hint { display: block; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -530,6 +568,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <span>FiqrTaalim</span>
 </a>
 <nav class="navlinks" aria-label="Page sections">
+<a href="#proof">Proof</a>
 <a href="#why">Why digital services</a>
 <a href="#learn">What you'll learn</a>
 <a href="#schedule">Schedule</a>
@@ -539,7 +578,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 </header>
 
 <div class="hero-copy">
-<div class="pill in d1"><span class="live-dot"></span><span>Live on Zoom on <span data-date="long">Friday, 23 October</span></span></div>
+<div class="pill in d1"><span class="live-dot"></span><span>Live on Zoom on <span data-date="long">Saturday, 24 October</span></span></div>
 <h1 class="h1 in d2">Get a complete roadmap to build your Digital product and scale it to 6 figures.</h1>
 <p class="tagline in d2">Earn halal, from anywhere.</p>
 
@@ -600,7 +639,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 
 <div class="gc-pos gc-right">
 <div class="gcard gcard-r">
-<div class="gc-top"><span class="gc-label"><span data-date="long">Friday, 23 October</span></span><span class="gc-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path></svg></span></div>
+<div class="gc-top"><span class="gc-label"><span data-date="long">Saturday, 24 October</span></span><span class="gc-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path></svg></span></div>
 <div class="gc-big">12 to 3 PM</div>
 <div class="tbar"><span class="tb tb-a"></span><span class="tb tb-z"></span><span class="tb tb-b"></span></div>
 <div class="gc-foot">Includes a 20-minute Zuhr break</div>
@@ -654,6 +693,67 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 </div>
 </section>
 
+<section class="sec-proof" id="proof">
+<div class="wrap">
+<div class="center-head rv">
+<div class="proof-pill">
+<svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path></svg>
+<span>Razorpay Verified Settlements</span>
+</div>
+<h2 class="h2">Real Results. Real Bank Settlements.</h2>
+<p class="proof-lead">We don't teach abstract theories. Here is an authentic, transparent look at our own automated Razorpay settlements deposited directly into our bank accounts from selling digital products and services.</p>
+</div>
+
+<div class="proof-stats rv">
+<div class="p-stat">
+<span class="p-stat-n">₹19.4L+</span>
+<span class="p-stat-l">Settled in Just 15 Days</span>
+</div>
+<div class="p-stat">
+<span class="p-stat-n">100%</span>
+<span class="p-stat-l">Automated Bank Disbursals</span>
+</div>
+<div class="p-stat">
+<span class="p-stat-n">Zero Riba</span>
+<span class="p-stat-l">100% Halal Digital Business</span>
+</div>
+</div>
+
+<div class="proof-frame-wrap rv">
+<div class="proof-frame">
+<div class="proof-frame-header">
+<div class="pf-brand">
+<span class="pf-dot"></span>
+<span class="pf-gateway">Razorpay</span>
+<span class="pf-sep">•</span>
+<span class="pf-tag">Merchant Settlements Dashboard</span>
+</div>
+<div class="pf-status">
+<svg viewBox="0 0 12 12" width="10" height="10" fill="currentColor"><circle cx="6" cy="6" r="4"></circle></svg>
+<span>All Settlements Processed</span>
+</div>
+</div>
+
+<div class="proof-img-box">
+<img src="razorpay-settlements.jpg" alt="Razorpay Merchant Settlement Dashboard Proof" width="1440" height="480" loading="lazy">
+</div>
+
+<div class="proof-frame-footer">
+<div class="pf-note">
+<span class="pf-shield"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+<div>
+<p class="pf-shield-t">100% Verified Bank Disbursals</p>
+<p class="pf-shield-d">Official settlement UTR numbers generated by Razorpay and credited directly to Indian bank accounts (Axis &amp; UTI). In this 3-hour live workshop, you'll learn the exact blueprint to build, launch and monetize digital products.</p>
+</div>
+</div>
+<a class="btn btn-sm btn-pulse" href="https://rzp.io/rzp/ileMwPI" data-register>Enroll Now — ₹499</a>
+</div>
+</div>
+<p class="proof-mobile-hint">Swipe horizontally to view full settlement amounts &amp; UTR numbers</p>
+</div>
+</div>
+</section>
+
 <section class="sec" id="why">
 <div class="wrap why">
 <div class="why-head rv">
@@ -698,7 +798,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <section class="sec" id="learn">
 <div class="wrap curr">
 <div class="curr-head rv">
-<h2 class="h2">Everything we'll cover on Friday</h2>
+<h2 class="h2">Everything we'll cover on Saturday</h2>
 <p class="lead">Fifteen topics in five parts, plus a bonus, in the order we teach them.</p>
 <a class="btn" href="https://rzp.io/rzp/ileMwPI" data-register>Enroll Now</a>
 </div>
@@ -776,11 +876,11 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <section class="sec" id="schedule">
 <div class="wrap">
 <div class="center-head rv">
-<h2 class="h2">Your Friday, planned around Salah</h2>
+<h2 class="h2">Your Saturday, planned around Salah</h2>
 <p class="lead">Three focused hours with a pause for Zuhr, so no one has to choose between learning and prayer.</p>
 </div>
 <div class="sched rv">
-<div class="sched-top"><span class="sched-time">12:00 PM</span><span class="sched-date"><span data-date="long">Friday, 23 October</span></span><span class="sched-time">3:00 PM</span></div>
+<div class="sched-top"><span class="sched-time">12:00 PM</span><span class="sched-date"><span data-date="long">Saturday, 24 October</span></span><span class="sched-time">3:00 PM</span></div>
 <div class="sbar">
 <div class="sseg sseg-a">Session one</div>
 <div class="sseg sseg-z"><span class="moon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path></svg></span><span>Zuhr</span></div>
@@ -795,7 +895,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 </li>
 <li class="fact rv">
 <span class="fact-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8.5 19z"></path><path d="M9 10.5h6M9 13.5h4"></path></svg></span>
-<div><h3 class="h3">Link on WhatsApp</h3><p class="body">After you register, you'll join our WhatsApp community. We share the Zoom link there on Friday evening.</p></div>
+<div><h3 class="h3">Link on WhatsApp</h3><p class="body">After you register, you'll join our WhatsApp community. We share the Zoom link there before the session starts.</p></div>
 </li>
 <li class="fact rv">
 <span class="fact-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path></svg></span>
@@ -832,7 +932,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <div class="rv">
 <h2 class="h2">Taught by the FiqrTaalim team</h2>
 <p class="lead">FiqrTaalim is India's first Islamic business education company. This webinar brings the same practical, halal-first teaching to digital services.</p>
-<div class="stat"><span class="stat-n">365+</span><span class="stat-l">Islamic e-commerce stores built across India</span></div>
+<div class="stat"><span class="stat-n">500+</span><span class="stat-l">Students trained across India</span></div>
 </div>
 <div class="mentors rv">
 <figure class="mentor">
@@ -854,7 +954,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <p class="lead">One live afternoon. Everything you need to start your own digital service business.</p>
 </div>
 <div class="ticket rv">
-<div class="tk-top"><span class="tk-k">Live webinar seat</span><span class="tk-date"><span data-date="long">Friday, 23 October</span></span></div>
+<div class="tk-top"><span class="tk-k">Live webinar seat</span><span class="tk-date"><span data-date="long">Saturday, 24 October</span></span></div>
 <div class="tk-price"><span class="tk-cur">₹</span><span class="tk-amt"><span data-price>499</span></span></div>
 <p class="tk-time">12:00 to 3:00 PM IST, live on Zoom</p>
 <div class="tk-cut" aria-hidden="true"></div>
@@ -878,9 +978,9 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <div class="faq rv">
 <details class="qa"><summary><span>Do I need any experience?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>No. We start from what a digital service is and build up step by step, so complete beginners can follow along.</p></details>
 <details class="qa"><summary><span>What do I need to join?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>A phone or laptop with a stable internet connection and the Zoom app installed.</p></details>
-<details class="qa"><summary><span>When exactly is it?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p><span data-date="long">Friday, 23 October</span>, from 12:00 to 3:00 PM IST. We take a 20-minute break in between for Zuhr Salah.</p></details>
+<details class="qa"><summary><span>When exactly is it?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p><span data-date="long">Saturday, 24 October</span>, from 12:00 to 3:00 PM IST. We take a 20-minute break in between for Zuhr Salah.</p></details>
 <details class="qa"><summary><span>What language is it in?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>Hindi and English.</p></details>
-<details class="qa"><summary><span>How will I get the Zoom link?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>After you register, you'll join our WhatsApp community. We share the joining link there on Friday evening.</p></details>
+<details class="qa"><summary><span>How will I get the Zoom link?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>After you register, you'll join our WhatsApp community. We share the joining link there before the session starts.</p></details>
 <details class="qa"><summary><span>How is this halal?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>We teach you to sell real services for a fair price, market them honestly and get paid without interest-based models or false promises.</p></details>
 <details class="qa"><summary><span>Can sisters join and work from home?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>Yes. Most digital services can be run fully from home, on your own schedule.</p></details>
 <details class="qa"><summary><span>I still have a question. Who do I ask?</span><span class="qa-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>Message us on WhatsApp at 99458 91650. It's a messages-only number, so please don't call.</p></details>
@@ -891,7 +991,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <section class="final">
 <div class="final-glow" aria-hidden="true"></div>
 <div class="wrap final-in rv">
-<h2 class="h2">Begin with Bismillah this Friday</h2>
+<h2 class="h2">Begin with Bismillah this Saturday</h2>
 <p class="lead">Three hours to learn how to build, sell and grow your own digital service, for ₹<span data-price>499</span>.</p>
 <p class="final-label" data-cdl="1">Webinar starts in</p>
 <div class="cd-big">
@@ -916,7 +1016,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 </footer>
 
 <div class="mbar">
-<div class="mb-info"><span class="mb-price">₹<span data-price>499</span></span><span class="mb-when"><span data-date="short">Fri 23 Oct</span>, 12 to 3 PM</span></div>
+<div class="mb-info"><span class="mb-price">₹<span data-price>499</span></span><span class="mb-when"><span data-date="short">Sat 24 Oct</span>, 12 to 3 PM</span></div>
 <a class="btn btn-sm btn-pulse" href="https://rzp.io/rzp/ileMwPI" data-register>Enroll Now</a>
 </div>
 
@@ -925,7 +1025,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 /* ===== EDIT THESE ===== */
 var CONFIG = {
   registerUrl: 'https://rzp.io/rzp/ileMwPI',  // Razorpay payment link
-  webinarDate: '2026-10-23',  // YYYY-MM-DD (starts 12:00 PM IST)
+  webinarDate: '2026-10-24',  // YYYY-MM-DD (starts 12:00 PM IST)
   price: '499',
   vimeoUrl: 'https://vimeo.com/1236674538/d090471588?share=copy&fl=sv&fe=ci'
 };
