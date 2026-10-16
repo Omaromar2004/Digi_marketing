@@ -407,14 +407,14 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
             <span class="card-head-ico">
               <svg class="ico" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
             </span>
-            <h3>Next Steps Before Saturday</h3>
+            <h3>Next Steps Before Friday</h3>
           </div>
 
           <div class="step-item">
             <span class="step-num">1</span>
             <div class="step-content">
               <h4>Join the WhatsApp Community</h4>
-              <p>This is where we deliver the Zoom link on Friday evening and send the 15-minute start reminder.</p>
+              <p>This is where we deliver the Zoom link on Thursday evening and send the 15-minute start reminder.</p>
             </div>
           </div>
 
@@ -430,7 +430,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
             <span class="step-num">3</span>
             <div class="step-content">
               <h4>Keep a Notebook & Zoom Ready</h4>
-              <p>Install Zoom on your laptop or phone beforehand so you can join promptly on Saturday.</p>
+              <p>Install Zoom on your laptop or phone beforehand so you can join promptly on Friday.</p>
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 
           <div class="detail-row">
             <span class="detail-label">Date</span>
-            <span class="detail-val" id="webinar-date-label">Saturday, 3 Oct 2026</span>
+            <span class="detail-val" id="webinar-date-label">Friday, 23 Oct 2026</span>
           </div>
           <div class="detail-row">
             <span class="detail-label">Time</span>
@@ -503,7 +503,7 @@ var CONFIG = {
   // Put your WhatsApp Community / Group invite link below:
   whatsappCommunityUrl: 'https://chat.whatsapp.com/DXLJxe1CuNCD6XKW15l6a4',
   supportPhone: '919945891650',
-  webinarDateStr: '2026-10-03', // YYYY-MM-DD
+  webinarDateStr: '2026-10-23', // YYYY-MM-DD
   title: 'Build Your Digital Product & Scale to 6 Figures (FiqrTaalim Live Webinar)',
   details: 'Zoom link is shared in the attendees WhatsApp group. Includes Zuhr Salah break.'
 };
@@ -530,8 +530,8 @@ var CONFIG = {
   // Google Calendar link generation
   var calBtn = document.getElementById('add-to-calendar');
   if (calBtn) {
-    var startIso = '20261003T063000Z'; // 12:00 PM IST is 06:30 UTC
-    var endIso = '20261003T093000Z';   // 3:00 PM IST is 09:30 UTC
+    var startIso = '20261023T063000Z'; // 12:00 PM IST is 06:30 UTC
+    var endIso = '20261023T093000Z';   // 3:00 PM IST is 09:30 UTC
     var calUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
       + '&text=' + encodeURIComponent(CONFIG.title)
       + '&dates=' + startIso + '/' + endIso
