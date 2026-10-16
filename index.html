@@ -585,7 +585,7 @@ a { color: #F2DCAE; } a:hover { color: #FFFFFF; }
 <!-- Video Player: Mobile-optimized 16:9 container with Vimeo embed -->
 <div class="hero-video-wrap in d3" id="hero-video-section">
 <div class="hero-video-box" id="hero-video-box">
-  <iframe src="https://player.vimeo.com/video/1236674538?h=d090471588" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:18px;" title="Webinar Preview"></iframe>
+  <iframe src="https://www.youtube.com/embed/WtmU8s2zftY?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:18px;" title="Webinar Preview"></iframe>
 </div>
 </div>
 
@@ -1027,7 +1027,7 @@ var CONFIG = {
   registerUrl: 'https://rzp.io/rzp/ileMwPI',  // Razorpay payment link
   webinarDate: '2026-10-24',  // YYYY-MM-DD (starts 12:00 PM IST)
   price: '499',
-  vimeoUrl: 'https://vimeo.com/1236674538/d090471588'
+  videoUrl: 'https://youtu.be/WtmU8s2zftY?si=fav62Pv6L7ObIjRG'
 };
 /* ====================== */
 (function () {
@@ -1057,18 +1057,22 @@ var CONFIG = {
     });
   });
 
-  // Dynamic Vimeo Video Loader (supports unlisted videos with privacy hash)
-  if (CONFIG.vimeoUrl) {
-    var vm = String(CONFIG.vimeoUrl).match(/vimeo\.com\/(\d+)(?:\/([a-zA-Z0-9]+))?/);
-    var vId = vm ? vm[1] : null;
-    var vHash = vm && vm[2] ? vm[2] : null;
-    if (vId) {
-      var srcUrl = 'https://player.vimeo.com/video/' + vId + (vHash ? '?h=' + vHash : '');
+  // Dynamic Video Loader (supports YouTube and Vimeo)
+  if (CONFIG.videoUrl) {
+    var yt = String(CONFIG.videoUrl).match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+    var vm = String(CONFIG.videoUrl).match(/vimeo\.com\/(\d+)(?:\/([a-zA-Z0-9]+))?/);
+    var srcUrl = '';
+    if (yt && yt[1]) {
+      srcUrl = 'https://www.youtube.com/embed/' + yt[1] + '?rel=0&modestbranding=1';
+    } else if (vm && vm[1]) {
+      srcUrl = 'https://player.vimeo.com/video/' + vm[1] + (vm[2] ? '?h=' + vm[2] : '');
+    }
+    if (srcUrl) {
       var vbox = document.getElementById('hero-video-box');
       if (vbox) {
         var existingIframe = vbox.querySelector('iframe');
         if (!existingIframe || existingIframe.src !== srcUrl) {
-          vbox.innerHTML = '<iframe src="' + srcUrl + '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:18px;" title="Webinar Preview"></iframe>';
+          vbox.innerHTML = '<iframe src="' + srcUrl + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:18px;" title="Webinar Preview"></iframe>';
         }
       }
     }
