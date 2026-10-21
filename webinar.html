@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Product Blueprint — Live AI Masterclass | FiqrTaalim</title>
+  <meta name="description" content="In 3 live hours, learn how to turn any skill into a high-margin digital product, build its landing page with AI, and run the Meta ads that sell it. 100% Halal. Saturday, 24 Oct · 12:00 PM IST on Zoom.">
+  <meta name="theme-color" content="#064e3b">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1261993239342313');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+      content_name: 'Digital Product Blueprint',
+      content_category: 'Live Masterclass',
+      value: 499,
+      currency: 'INR'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1261993239342313&ev=PageView&noscript=1" alt="Meta Pixel" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts: Sora, Plus Jakarta Sans, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-dark: #064e3b;
+      --primary-emerald: #059669;
+      --primary-bright: #10b981;
+      --primary-mint: #ecfdf5;
+      --primary-mint-light: #f0fdf4;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-400: #94a3b8;
+      --border-light: #e2e8f0;
+      --border-emerald: #d1fae5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--slate-900);
+      background: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 76px;
+    }
+
+    ::selection {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .container-tight {
+      max-width: 820px;
+    }
+
+    /* Top Bar */
+    .top-announcement-bar {
+      background: #022c22;
+      color: #a7f3d0;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+
+
+    /* Badges & Pills */
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-mint);
+      border: 1px solid var(--border-emerald);
+      color: var(--primary-dark);
+      border-radius: 9999px;
+      padding: 8px 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.08);
+    }
+
+    .pulse-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #059669;
+      border-radius: 50%;
+      animation: livePulse 1.8s infinite;
+    }
+
+    @keyframes livePulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(5, 150, 105, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      color: var(--slate-900);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+      padding: 40px 0 48px;
+      text-align: center;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .hero-h1 {
+      font-size: clamp(2.1rem, 4.2vw, 3.2rem);
+      max-width: 880px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--slate-600);
+      max-width: 680px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    /* Video Player Facade */
+    .video-stage {
+      max-width: 780px;
+      margin: 24px auto 32px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(5, 150, 105, 0.16);
+      border: 2px solid rgba(5, 150, 105, 0.18);
+      position: relative;
+      background: #022c22;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      background: #000;
+      cursor: pointer;
+    }
+
+    .video-facade-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .video-wrapper:hover .video-facade-thumb {
+      transform: scale(1.02);
+      filter: brightness(0.92);
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 76px;
+      height: 76px;
+      background: linear-gradient(135deg, #059669, #10b981);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(5, 150, 105, 0.5), 0 0 0 10px rgba(255, 255, 255, 0.25);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .video-wrapper:hover .play-button {
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 14px 40px rgba(5, 150, 105, 0.65), 0 0 0 14px rgba(255, 255, 255, 0.35);
+    }
+
+    .play-icon {
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+      border-left: 22px solid #ffffff;
+      margin-left: 5px;
+    }
+
+    .video-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Buttons */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      font-family: 'Sora', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 18px 42px;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 12px 36px rgba(5, 150, 105, 0.35);
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 44px rgba(5, 150, 105, 0.45);
+      background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    }
+
+    .btn-cta-sub {
+      margin-top: 12px;
+      font-size: 0.88rem;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .strike-price {
+      text-decoration: line-through;
+      color: #94a3b8;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+
+    /* Countdown Component */
+    .countdown-box {
+      margin: 26px auto 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      padding: 10px 22px;
+      border-radius: 100px;
+      border: 1px solid var(--border-emerald);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.08);
+    }
+
+    .countdown-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .countdown-timer {
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: 0.96rem;
+      color: #dc2626;
+      letter-spacing: 0.02em;
+    }
+
+    /* Logo Marquee */
+    .marquee-container {
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid #f1f5f9;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--slate-400);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 25s linear infinite;
+      align-items: center;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 28px;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .marquee-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary-emerald);
+    }
+
+    /* Section Global */
+    .section {
+      padding: 72px 0;
+      position: relative;
+    }
+
+    .section-light {
+      background: #ffffff;
+    }
+
+    .section-mint {
+      background: var(--primary-mint-light);
+      border-top: 1px solid var(--border-emerald);
+      border-bottom: 1px solid var(--border-emerald);
+    }
+
+    .section-dark {
+      background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+      color: #ffffff;
+    }
+
+    .section-dark h2 {
+      color: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 44px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--primary-emerald);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--primary-mint);
+      border: 1px solid var(--border-emerald);
+      padding: 4px 14px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+
+    .section-h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      margin-bottom: 14px;
+    }
+
+    .section-sub {
+      font-size: 1.02rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 18px;
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(5, 150, 105, 0.12);
+      border-color: var(--border-emerald);
+    }
+
+    .stat-val {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.8rem, 2.6vw, 2.2rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .stat-lbl {
+      font-size: 0.88rem;
+      color: var(--slate-600);
+      font-weight: 600;
+    }
+
+    /* What You'll Learn Cards */
+    .learn-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .learn-card {
+      background: #ffffff;
+      border: 1px solid #f1f5f9;
+      border-radius: 18px;
+      padding: 26px 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .learn-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-emerald);
+      box-shadow: 0 16px 48px rgba(5, 150, 105, 0.12);
+    }
+
+    .learn-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--primary-mint);
+      border: 1px solid var(--border-emerald);
+      color: var(--primary-emerald);
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .learn-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--slate-900);
+      line-height: 1.4;
+    }
+
+    .learn-desc {
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* Mentors Section */
+    .mentors-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .mentor-card {
+      background: #ffffff;
+      border: 1px solid var(--border-emerald);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(5, 150, 105, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mentor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(5, 150, 105, 0.16);
+    }
+
+    .mentor-img-box {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      position: relative;
+      background: #022c22;
+      overflow: hidden;
+    }
+
+    .mentor-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.4s ease;
+    }
+
+    .mentor-card:hover .mentor-img {
+      transform: scale(1.03);
+    }
+
+    .mentor-info {
+      padding: 24px;
+      flex: 1;
+    }
+
+    .mentor-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+    }
+
+    .mentor-role {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+
+    .mentor-bio {
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    .mentors-proof-bar {
+      margin-top: 32px;
+      text-align: center;
+      background: var(--primary-mint);
+      border: 1px solid var(--border-emerald);
+      border-radius: 100px;
+      padding: 12px 24px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: inline-block;
+    }
+
+    /* Bonuses Section */
+    .bonuses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+
+    .bonus-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .bonus-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary-emerald);
+      box-shadow: 0 16px 48px rgba(5, 150, 105, 0.14);
+    }
+
+    .bonus-top-strip {
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+      border-bottom: 1px solid var(--border-emerald);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bonus-type-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      background: #ffffff;
+      border: 1px solid var(--border-emerald);
+      padding: 3px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .bonus-included-pill {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #15803d;
+      background: #dcfce7;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .bonus-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bonus-icon {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .bonus-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .bonus-sub {
+      font-size: 0.88rem;
+      color: var(--slate-600);
+      line-height: 1.55;
+    }
+
+    /* Razorpay Proof Section */
+    .proof-box {
+      max-width: 820px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border-emerald);
+      box-shadow: 0 20px 60px rgba(5, 150, 105, 0.12);
+      background: #ffffff;
+    }
+
+    .proof-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .proof-footer {
+      padding: 16px 24px;
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--slate-700);
+    }
+
+    /* Warning Section */
+    .warning-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .warning-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 22px 24px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--border-light);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      transition: transform 0.25s ease;
+    }
+
+    .warning-card:hover {
+      transform: translateX(4px);
+      border-color: #fca5a5;
+    }
+
+    .cross-icon {
+      color: #ef4444;
+      font-size: 1.25rem;
+      font-weight: 900;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+
+    .warning-text {
+      font-size: 0.96rem;
+      color: var(--slate-700);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* Guarantee Section */
+    .guarantee-circle {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+      border: 3px solid #86efac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      color: #15803d;
+      margin: 0 auto 24px;
+      box-shadow: 0 8px 30px rgba(34, 197, 94, 0.2);
+    }
+
+    /* FAQ Section */
+    .faq-stack {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .faq-item:hover {
+      border-color: var(--border-emerald);
+    }
+
+    .faq-item summary {
+      padding: 20px 24px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-toggle-icon {
+      font-size: 1.2rem;
+      color: var(--primary-emerald);
+      font-weight: 800;
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item[open] .faq-toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px 22px;
+      font-size: 0.95rem;
+      color: var(--slate-600);
+      line-height: 1.7;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 14px;
+    }
+
+    /* Final CTA Section */
+    .final-cta-box {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .final-cta-h2 {
+      font-size: clamp(2rem, 3.8vw, 2.9rem);
+      margin-bottom: 18px;
+    }
+
+    .final-cta-sub {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      max-width: 580px;
+      margin: 0 auto 34px;
+      line-height: 1.7;
+    }
+
+    .stars-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+
+    .stars {
+      color: #f59e0b;
+      letter-spacing: 2px;
+    }
+
+    /* Footer */
+    .site-footer {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.82rem;
+    }
+
+    .footer-logo {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin: 14px 0 18px;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    /* Sticky Mobile Bottom Bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border-light);
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .sticky-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky-price {
+      font-family: 'Sora', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .sticky-meta {
+      font-size: 0.74rem;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .sticky-btn {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(5, 150, 105, 0.35);
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* Mobile Responsive Breakpoints */
+    @media (max-width: 900px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .learn-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .bonuses-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-section {
+        padding: 24px 0 36px;
+      }
+      .nav-logo-img {
+        height: 32px;
+      }
+      .hero-h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+      }
+      .hero-sub {
+        font-size: 0.95rem;
+        margin-bottom: 22px;
+      }
+      .btn-cta {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 1.02rem;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .stat-card {
+        padding: 18px 12px;
+      }
+      .stat-val {
+        font-size: 1.6rem;
+      }
+      .stat-lbl {
+        font-size: 0.78rem;
+      }
+      .learn-grid {
+        grid-template-columns: 1fr;
+      }
+      .mentors-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .bonuses-grid {
+        grid-template-columns: 1fr;
+      }
+      .countdown-box {
+        width: 100%;
+        justify-content: center;
+      }
+      .play-button {
+        width: 60px;
+        height: 60px;
+      }
+      .play-icon {
+        border-top-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Single source for Date, Time, Language) -->
+  <div class="top-announcement-bar">
+    Live on Zoom · Sat, 24 Oct · 12:00 PM – 3:00 PM IST · Hindi &amp; English
+  </div>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      
+      <!-- Single Clean Badge (No repetition of date/time) -->
+      <div class="hero-badge-pill">
+        <span class="pulse-dot"></span> 3-Hour Live Masterclass · 100% Halal Model
+      </div>
+
+      <h1 class="hero-h1">
+        Build &amp; Sell Your First Digital Product Using AI — <span class="gradient-text">100% Halal</span>
+      </h1>
+
+      <p class="hero-sub">
+        In 3 live hours, learn how to turn a skill into a high-margin digital product, build its landing page with AI, and run the Meta ads that sell it. Zero inventory. Zero riba.
+      </p>
+
+      <!-- Video Stage Facade -->
+      <div class="video-stage">
+        <div class="video-wrapper" id="videoFacade" onclick="playHeroVideo()">
+          <img src="/images/yt-thumb.webp" onerror="this.src='https://i.ytimg.com/vi/jzvWxI1qYWI/hqdefault.jpg'" alt="Masterclass Video Preview" class="video-facade-thumb" loading="eager" width="780" height="438">
+          <div class="play-button" aria-label="Play video">
+            <div class="play-icon"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero CTA -->
+      <div>
+        <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger">
+          Reserve My Seat for ₹499 →
+        </a>
+        <div class="btn-cta-sub">
+          ₹499 <span class="strike-price">₹1,999</span> · 100% refund if you attend and don't learn
+        </div>
+      </div>
+
+      <!-- Real Countdown Box -->
+      <div class="countdown-box">
+        <span class="countdown-label">⏳ Starts In:</span>
+        <span class="countdown-timer" id="heroCountdown">Calculating...</span>
+      </div>
+
+      <!-- Logo Ticker -->
+      <div class="marquee-container">
+        <p class="marquee-title">Tools &amp; Platforms Covered In This Blueprint</p>
+        <div class="marquee-track">
+          <div class="marquee-item"><span class="marquee-dot"></span>Meta Ads</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Google Ads</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Razorpay</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>OpenAI ChatGPT</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Anthropic Claude</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Cursor AI</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>v0.dev</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Zoom Live</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>WhatsApp API</div>
+          <!-- Repeat -->
+          <div class="marquee-item"><span class="marquee-dot"></span>Meta Ads</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Google Ads</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Razorpay</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>OpenAI ChatGPT</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Anthropic Claude</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Cursor AI</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>v0.dev</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>Zoom Live</div>
+          <div class="marquee-item"><span class="marquee-dot"></span>WhatsApp API</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="section section-mint" style="padding: 44px 0;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-val">₹5.5 Cr+</div>
+          <div class="stat-lbl">Revenue Generated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">600+</div>
+          <div class="stat-lbl">Students Trained</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">10+</div>
+          <div class="stat-lbl">Successful Models</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">100%</div>
+          <div class="stat-lbl">Halal &amp; Riba-Free</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Learn Section -->
+  <section class="section section-light" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curriculum</span>
+        <h2 class="section-h2">What You'll Learn in 3 Live Hours</h2>
+        <p class="section-sub">A dense, zero-fluff blueprint designed so you can launch your first digital product the same week.</p>
+      </div>
+
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-num">01</div>
+          <h3 class="learn-title">Packaging Skills into High-Demand Products</h3>
+          <p class="learn-desc">How to identify a high-paying skill or knowledge area and package it into a premium digital asset people actively line up to buy.</p>
+        </div>
+
+        <div class="learn-card">
+          <div class="learn-num">02</div>
+          <h3 class="learn-title">₹5.5 Cr Step-by-Step Case Study</h3>
+          <p class="learn-desc">Uncensored walk-through of our actual Razorpay dashboard, marketing funnel, unit economics, conversion metrics, and profit margins.</p>
+        </div>
+
+        <div class="learn-card">
+          <div class="learn-num">03</div>
+          <h3 class="learn-title">Build Your Landing Page Live with AI</h3>
+          <p class="learn-desc">Watch us build a high-converting, mobile-first sales page live using modern AI tools — without writing a single line of code or hiring a developer.</p>
+        </div>
+
+        <div class="learn-card">
+          <div class="learn-num">04</div>
+          <h3 class="learn-title">Meta Ads That Bring Real Buyers</h3>
+          <p class="learn-desc">The exact ad creative formulas, hook angles, and Meta audience setups that drive high-intent purchases instead of empty likes.</p>
+        </div>
+
+        <div class="learn-card">
+          <div class="learn-num">05</div>
+          <h3 class="learn-title">Selling ₹10k–₹50k High-Ticket Offers</h3>
+          <p class="learn-desc">How to transition from low-ticket products to closing high-ticket consulting, services, and coaching on phone calls with confidence.</p>
+        </div>
+
+        <div class="learn-card">
+          <div class="learn-num">06</div>
+          <h3 class="learn-title">Live Interactive Q&amp;A with Founders</h3>
+          <p class="learn-desc">Get your specific questions answered directly by Mohammed Aqib and Mohammed Omar on Zoom. No pre-recorded canned responses.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger">
+          Reserve My Seat for ₹499 →
+        </a>
+        <div class="btn-cta-sub">
+          ₹499 <span class="strike-price">₹1,999</span> · Batch starts Sat 24 Oct, 12:00 PM IST
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Your Mentors -->
+  <section class="section section-mint" id="mentors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Instructors</span>
+        <h2 class="section-h2">Meet Your Mentors</h2>
+        <p class="section-sub">Learn directly from the operators who actually manage ad spends, build the AI pipelines, and scale companies daily.</p>
+      </div>
+
+      <div class="mentors-grid">
+        <!-- Mohammed Aqib -->
+        <div class="mentor-card">
+          <div class="mentor-img-box">
+            <img src="/images/mentor-aqib.webp" alt="Mohammed Aqib" class="mentor-img" loading="lazy" width="400" height="500">
+          </div>
+          <div class="mentor-info">
+            <h3 class="mentor-name">Mohammed Aqib</h3>
+            <div class="mentor-role">Co-Founder, FIQRGROUPS</div>
+            <p class="mentor-bio">Leads strategy, sales and marketing across FIQRGROUPS' four companies. Scaled high-ticket sales engines and direct-response performance campaigns across India and GCC.</p>
+          </div>
+        </div>
+
+        <!-- Mohammed Omar -->
+        <div class="mentor-card">
+          <div class="mentor-img-box">
+            <img src="/images/mentor-omar.webp" alt="Mohammed Omar" class="mentor-img" loading="lazy" width="400" height="500">
+          </div>
+          <div class="mentor-info">
+            <h3 class="mentor-name">Mohammed Omar</h3>
+            <div class="mentor-role">Co-Founder, FIQRGROUPS</div>
+            <p class="mentor-bio">Leads technology, AI and automation. Builds the high-converting AI landing pages, ad systems, and automated fulfillment workflows taught in this masterclass.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <div class="mentors-proof-bar">
+          ✨ Together we've managed ₹2.45 Cr+ in ad spend across Meta and Google since 2024.
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger">
+          Reserve My Seat for ₹499 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonuses Section -->
+  <section class="section section-light" id="bonuses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🎁 Included Free</span>
+        <h2 class="section-h2">₹15,000 in Implementation Bonuses. <span class="gradient-text">Included.</span></h2>
+        <p class="section-sub">Every registered attendee gets these immediately. Zero upsell, zero hidden catch.</p>
+      </div>
+
+      <div class="bonuses-grid">
+        <!-- Bonus 1 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">PDF / Prompts</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">⚡</div>
+            <h3 class="bonus-title">High-Converting Landing Page AI Prompts</h3>
+            <p class="bonus-sub">The exact prompt stack we feed Claude and ChatGPT to produce high-converting headlines, offer copy, FAQs, and full sales pages in under 15 minutes.</p>
+          </div>
+        </div>
+
+        <!-- Bonus 2 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">Swipe File</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">🎯</div>
+            <h3 class="bonus-title">Meta Ad Creative Swipe File &amp; Hook Formulas</h3>
+            <p class="bonus-sub">15 battle-tested visual hooks and caption angles specifically engineered for selling digital products profitably at low CPMs.</p>
+          </div>
+        </div>
+
+        <!-- Bonus 3 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">Blueprint</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">🗺️</div>
+            <h3 class="bonus-title">₹0 to ₹10L/Month Digital Roadmap</h3>
+            <p class="bonus-sub">Day-by-day action plan across 4 distinct phases: from zero audience to your first sale, then scaling to consistent ₹10 lakh months.</p>
+          </div>
+        </div>
+
+        <!-- Bonus 4 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">Script</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">📞</div>
+            <h3 class="bonus-title">High-Ticket Phone Closing Script</h3>
+            <p class="bonus-sub">Our 1-on-1 sales script and objection handling framework to comfortably close ₹10,000 to ₹50,000 clients over a 20-minute Zoom call.</p>
+          </div>
+        </div>
+
+        <!-- Bonus 5 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">Checklist</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">🛡️</div>
+            <h3 class="bonus-title">Halal Business Verification Checklist</h3>
+            <p class="bonus-sub">12-point Shariah audit list to ensure your contracts, pricing structure, guarantees, and revenue streams remain 100% ethical and riba-free.</p>
+          </div>
+        </div>
+
+        <!-- Bonus 6 -->
+        <div class="bonus-card">
+          <div class="bonus-top-strip">
+            <span class="bonus-type-badge">ZIP Vault</span>
+            <span class="bonus-included-pill">INCLUDED</span>
+          </div>
+          <div class="bonus-body">
+            <div class="bonus-icon">📦</div>
+            <h3 class="bonus-title">10 Proven Digital Product Blueprints</h3>
+            <p class="bonus-sub">10 ready-to-launch digital product concepts across tech, design, marketing, and coaching with proven pricing structures and market demand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Results / Verified Settlements -->
+  <section class="section section-mint" id="proof">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verified Proof</span>
+        <h2 class="section-h2">Real Results. Real Bank Settlements.</h2>
+        <p class="section-sub">We don't teach theory or screenshot vanity numbers. Here is what actual settled Razorpay revenue looks like in bank accounts.</p>
+      </div>
+
+      <div class="proof-box">
+        <img src="/razorpay-settlements.webp" onerror="this.src='/razorpay-settlements.jpg'" alt="Verified Razorpay Settlements" class="proof-img" loading="lazy" width="820" height="460">
+        <div class="proof-footer">
+          <span>✓ 100% Verified Bank Transfers</span>
+          <span>✓ Automated Digital Fulfillment</span>
+          <span>✓ Zero Inventory · Zero Shipping Loss</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fair Warning Section -->
+  <section class="section section-light" id="warning">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: #dc2626; background: #fee2e2; border-color: #fca5a5;">Important</span>
+        <h2 class="section-h2">Fair Warning. <span style="color: #ef4444;">Don't Join</span> If…</h2>
+        <p class="section-sub">This workshop is intentionally filtered. We only want students who are serious about execution.</p>
+      </div>
+
+      <div class="warning-stack">
+        <div class="warning-card">
+          <span class="cross-icon">✕</span>
+          <p class="warning-text"><strong>You want a get-rich-quick shortcut.</strong> This is a real digital business that takes strategic focus and real work. If you want overnight magic without effort, this isn't it.</p>
+        </div>
+
+        <div class="warning-card">
+          <span class="cross-icon">✕</span>
+          <p class="warning-text"><strong>You sign up for things and never show up.</strong> The masterclass is live, the interactive value is in being present, and seats are limited. Please leave the spot for someone who will actually attend and implement.</p>
+        </div>
+
+        <div class="warning-card">
+          <span class="cross-icon">✕</span>
+          <p class="warning-text"><strong>You're comfortable with where you are.</strong> This is built for people who are done settling for 9-to-5 limits or unpredictable freelancing and are ready to put in the work to build a real asset.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger">
+          Reserve My Seat for ₹499 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="section section-mint" id="guarantee" style="text-align: center;">
+    <div class="container container-tight">
+      <div class="guarantee-circle">✓</div>
+      <h2 class="section-h2">Learn Something New or Get 100% Back</h2>
+      <p class="section-sub" style="max-width: 580px; margin: 16px auto 28px;">
+        If you attend the full masterclass and don't learn anything actionable or new, we'll refund your ₹499 completely. No questions, no hoops. You just have to show up and attend.
+      </p>
+      <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger">
+        Reserve My Seat for ₹499 →
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-light" id="faq">
+    <div class="container container-tight">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-h2">Before You Decide</h2>
+        <p class="section-sub">Frequently asked questions about the live workshop, format, and what to expect.</p>
+      </div>
+
+      <div class="faq-stack">
+        <details class="faq-item" open>
+          <summary>
+            <span>What exactly happens in the 3 live hours?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            You'll get our complete digital product framework: packaging your skill, a full ₹5.5 Cr case study with real numbers, building a live sales landing page with AI, setting up Meta ads that convert, closing high-ticket offers, and an open live Q&amp;A. It's dense, practical, and designed for immediate execution.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>How and when do I attend?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            After registering, you will immediately join our official private WhatsApp group and receive an email with your Zoom link. The workshop takes place on <strong>Saturday, 24 October from 12:00 PM to 3:00 PM IST</strong> on Zoom. We also take a dedicated break for Zuhr Salah.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Do I need prior tech, coding, or marketing experience?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            No. We start from ground zero: how digital products work, and how modern AI tools do the heavy lifting for page creation, copywriting, and ad design. All you need is a laptop or phone with internet access.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Is this 100% Halal and Shariah-compliant?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            Yes, 100%. Selling legitimate skills, educational content, software tools, or digital services involves clear ownership, voluntary mutual agreement, transparent pricing, and zero riba (interest), gharar (excessive ambiguity), or deceitful marketing practices.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>What language will the masterclass be conducted in?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            The session is taught in conversational, easy-to-follow Hindi and English (Hinglish), ensuring every concept is crystal clear.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>What if I attend and feel it wasn't worth it?</span>
+            <span class="faq-toggle-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            We offer an ironclad 100% money-back guarantee. If you attend the 3-hour class and feel you didn't learn anything valuable, simply message our support WhatsApp number (+91 99458 91650) for a prompt, unconditional ₹499 refund.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Strip -->
+  <section class="section section-dark" id="final-cta">
+    <div class="container">
+      <div class="final-cta-box">
+        <h2 class="final-cta-h2">
+          You're ₹499 Away From Seeing <span class="gradient-text">How This Actually Works.</span>
+        </h2>
+        <p class="final-cta-sub">
+          Saturday, 24 Oct · 12:00 PM – 3:00 PM IST. 3 live hours. One proven system. The same blueprint that generated ₹5.5 Cr+ in revenue. See it. Learn it. Build it.
+        </p>
+
+        <div>
+          <a href="https://rzp.io/rzp/ileMwPI" class="btn-cta cta-trigger" style="font-size: 1.22rem; padding: 20px 48px;">
+            Reserve My Seat for ₹499 →
+          </a>
+          <div class="stars-strip">
+            <span class="stars">★★★★★</span>
+            <span>100% refund guarantee · Instant Zoom Access · 100% Halal</span>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div>
+            <img src="/images/fiqrtaalim-logo-clean.png" alt="FiqrTaalim" class="footer-logo">
+          </div>
+
+          <p style="margin-bottom: 12px; font-size: 0.85rem;">
+            Questions or support? WhatsApp us directly at <a href="https://wa.me/919945891650" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-weight: 700; text-decoration: none;">+91 99458 91650</a>
+          </p>
+
+          <div class="footer-links">
+            <a href="https://wa.me/919945891650" target="_blank" rel="noopener noreferrer">Contact Support</a>
+            <span>·</span>
+            <a href="#curriculum">Curriculum</a>
+            <span>·</span>
+            <a href="#mentors">Mentors</a>
+            <span>·</span>
+            <a href="#guarantee">Refund Policy</a>
+          </div>
+
+          <p style="font-size: 0.75rem; color: #64748b; margin-top: 14px;">
+            © 2026 FIQRGROUPS / FiqrTaalim. All rights reserved. This site is not a part of Facebook or Meta Platforms Inc.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile Bottom Bar -->
+  <div class="sticky-bar" id="stickyBar">
+    <div class="sticky-info">
+      <div class="sticky-price">₹499 <span class="strike-price" style="font-size: 0.85rem;">₹1,999</span></div>
+      <div class="sticky-meta">Sat 24 Oct, 12:00 PM IST</div>
+    </div>
+    <a href="https://rzp.io/rzp/ileMwPI" class="sticky-btn cta-trigger">
+      Reserve My Seat →
+    </a>
+  </div>
+
+  <script>
+    const CONFIG = {
+      targetTime: "2026-10-24T12:00:00+05:30",
+      checkoutUrl: "https://rzp.io/rzp/ileMwPI",
+      supportWhatsApp: "https://wa.me/919945891650",
+      price: 499
+    };
+
+    function playHeroVideo() {
+      const container = document.getElementById('videoFacade');
+      container.innerHTML = '<iframe class="video-iframe" src="https://www.youtube-nocookie.com/embed/jzvWxI1qYWI?autoplay=1&rel=0&playsinline=1&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    }
+
+    function updateCountdown() {
+      const target = new Date(CONFIG.targetTime).getTime();
+      const now = new Date().getTime();
+      const diff = target - now;
+
+      const countdownEl = document.getElementById('heroCountdown');
+
+      if (diff <= 0) {
+        if (countdownEl) countdownEl.innerHTML = "Class has started!";
+        document.querySelectorAll('.cta-trigger').forEach(btn => {
+          btn.textContent = "This batch has started — WhatsApp us for the next one";
+          btn.href = CONFIG.supportWhatsApp;
+        });
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      let text = "";
+      if (days > 0) text += days + "d ";
+      text += hours + "h " + minutes + "m " + seconds + "s";
+
+      if (countdownEl) {
+        countdownEl.textContent = text;
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    document.querySelectorAll('.cta-trigger').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('http') && !href.includes('wa.me')) {
+          e.preventDefault();
+          if (window.fbq) {
+            fbq('track', 'InitiateCheckout', {
+              value: CONFIG.price,
+              currency: 'INR'
+            });
+          }
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300);
+        }
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const stickyBar = document.getElementById('stickyBar');
+      if (window.scrollY > 300) {
+        stickyBar.style.transform = 'translateY(0)';
+      } else {
+        stickyBar.style.transform = 'translateY(100%)';
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
